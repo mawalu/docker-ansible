@@ -12,7 +12,7 @@ FROM ubuntu:18.04
 MAINTAINER William Yeh <william.pjyeh@gmail.com>
 
 RUN echo "===> Installing gnupgp..." && \
-    apt-get update && apt-get install -my gnupg && \
+    apt-get update && apt-get install -my gnupg restic rsync  && \
     \
     \
     echo "===> Adding Ansible's PPA..."  && \
